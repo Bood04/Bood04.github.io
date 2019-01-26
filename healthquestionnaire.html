@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	<head>
+		<title>Health Questionnaire</title>
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		
+	</head>
+	<style>
+		#main {
+			font-family: 'Raleway' , sans-serif;
+			
+		}
+		
+		header {
+			background-color: rgba(116, 155, 219, 0.7);
+			text-align: center;
+			height: 150px;
+			font-size: 2vw;
+			padding-top: 25px;
+			padding-bottom: 25px;
+			color: white;
+			text-decoration: underline;
+			text-shadow: 2px 2px black;
+		}
+		
+		#description {
+			text-align: center;
+			width: 60%;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			font-size: 1.5vw;
+		}
+		
+		#everything {
+			width: 820px;
+			background-color: rgba(116, 155, 219, 0.7);
+			margin: auto;
+		}
+		
+		input {
+			
+		}
+		
+		input[type=textarea] {
+			width: 200px;
+			height: 60px;
+			
+		}
+		
+		label {
+			display: block;
+			position: relative;
+			background-color: 
+			
+		}
+		
+		button {
+			width: 20%;
+			margin-left: 40%;
+			margin-right: 40%;
+			font-size: 16px;
+		}
+		
+		
+		.basics-container {
+				font-size: 1.5vw;
+			}
+		
+		
+	</style>
+		
+		<body id="main">
+			<header><h1 id="title">Health Questionnaire</h1></header>
+			<p id="description">
+				This questionnaire is designed to get your feedback on your overall health after each day of training.  Please fill out as accurately as possible, and use the comments box to add any details that may have been missed in the questionnaire.
+			</p>
+			<div id="everything">
+				<div class="basics-container">
+			<form id="survey-form">
+				<label id="name-label">First Name:<input type="text" name="name"  placeholder="First Name" id="name" required></label>
+				<br>
+				
+				<label>Last Name:<input type="text" name="name"  placeholder="Last Name" required></label>
+				<br>
+				
+				<label id="email-label">Email:<input type="email" name="email" placeholder="Email" id="email" required></label>
+				<br>
+				
+				<label id="number-label">Age:<input type="number" name="age" placeholder="Age" min="0" id="number" min="18" max="36" required></label>
+				<br>
+				<br>
+				<br>
+				
+				Overall physical feeling (scale 1-10 1=lowest 10=highest):<input type="number" name="number"  min="1" max="10" placeholder="1" id="number">
+				<br>
+				<br>
+				
+				<label id="radios">Position:</label>
+				<input type="radio" name="position" value="Goalkeeper">Goalkeeper
+				<input type="radio" name="position" value="Defender">Defender
+				<input type="radio" name="position" value="Midfielder">Midfielder
+				<input type="radio" name="position" value="Striker">Striker
+				<br>
+				<br>
+				How long (in hours) did you train yesterday?: 
+				<select id="dropdown" required>
+					<option value="0">None</option>
+					<option value="1">1 hour</option>
+					<option value="1.5">1.5 hours</option>
+					<option value="2">2 hours</option>
+					<option value="2.5">2.5 hours</option>
+					<option value="3">3 hours</option>
+					<option value="3.5">3.5 hours</option>
+					<option value="4">4 hours</option>
+				</select>
+			
+				<br>
+				<br>
+				Please indicate which part of your body (if any) is experiencing muscle soreness:
+				<br>
+				<br>
+				<input type="checkbox" name="bodypart" value="Shoulders">Shoulders
+				<br>
+				<input type="checkbox" name="bodypart" value="Abs">Abs
+				<br>
+				<input type="checkbox" name="bodypart" value="Hip Flexers">Hip Flexers
+				<br>
+				<input type="checkbox" name="bodypart" value="Quadriceps">Quadriceps
+				<br>
+				<input type="checkbox" name="bodypart" value="Hamstrings">Hamstrings
+				<br>
+				<input type="checkbox" name="bodypart" value="Calfs">Calfs
+				<br>
+				<br>
+				<br>
+				Comments: 
+				<textarea rows="8" cols="30" max-width="" placeholder="Enter your comments here"></textarea>
+				<br>
+				<br>
+				<br>
+				<button type="submit" id="submit">Submit All</button>
+				
+				
+				</form>
+				</div>
+				</div>
+		</body>
+</html>
